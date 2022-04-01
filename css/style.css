@@ -1,0 +1,448 @@
+/*HOME*/
+.escudos{
+    width: 18px;
+    height: 18px;
+    border-radius: 25px;
+}
+.cabeceraLetra{
+    font-family: 'Merienda', cursive;
+    font-size: 0.9rem !important;
+}
+.letratexto{
+    font-family: 'Redressed', cursive;
+    font-size: 1.4rem;
+}
+.letratitulo{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.letratitulo2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.buscar1{
+    font-weight: bold !important;
+    font-family: 'Merienda', cursive;
+}
+.colorRojo{
+    background-color: brown;
+    color: white;
+}
+.nav-item, .nav-link.active{
+    text-align: center;
+    padding-top: 0%;
+}
+.icono{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.display2{
+    display: none;
+}
+.sectionImagen{
+    position: relative;
+    height: 87vh;
+}
+.heightCarousel{
+    height: 87vh;
+}
+.habitacionesCarousel{
+    width: 24%;
+    height: 52vh;
+}
+.sectionCarouselHabitaciones{
+    height: 55vh;
+    min-height: 230px;
+}
+.sectionColor{
+    background-color: cornflowerblue;
+}
+.centrarCarousel{
+    text-align: center;
+}
+.nav1{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+section >.carousel1{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.fondoOscuro{
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 9%,rgba(0,0,0,0.7) 10%,rgba(0,0,0,0) 90%);
+}
+.botonesCarousel{
+    background-color: black;
+    border-radius: 20px;
+}
+.bordefijo{
+    border-bottom: solid 2px white;
+    width: min-content;
+    max-width: max-content;
+    margin: auto;
+}
+.bordehover{
+    width: min-content;
+    max-width: max-content;
+    margin: auto;
+}
+.bordehover:hover{
+    border-bottom: solid 2px white;
+}
+.logo{
+    width: 140px;
+    height: 90px;
+}
+.disponibilidadAbsolute{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+}
+.formularioDisponibilidad{
+    background: rgba(0,0,0,0.7);
+}
+.color{
+    background-color: blanchedalmond;
+}
+.footer{
+    background-color: brown;
+}
+.enlace2{
+    color: brown;
+    text-decoration: none;
+}
+.colorLetraFooter{
+    color: goldenrod;
+}
+.tiktok i:hover{
+    color: black;
+}
+.twitter i:hover{
+    color: aqua;
+}
+.instagram i:hover{
+    color: mediumorchid;
+}
+
+/*EditarPerfil*/
+.colorFormulario{
+    background-image: url("https://casadelpoeta.es/wp-content/uploads/2017/05/sevilla-con-encanto-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.colorDivFormulario{
+    background-color: rgba(224, 178, 178, 0.7)
+}
+.lineaSepara{
+    border-bottom: solid 2px white;
+}
+.letraEditar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.negritaform{
+    font-weight: bold;
+}
+
+/*Reserva*/
+.letraReserva2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.reservadatos{
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: bold;
+}
+.bordeReserva{
+    border-bottom: solid 2px brown;
+}
+.colorReserva{
+    background-color: rgb(180, 179, 179);
+}
+.enlaceReserva{
+    color: brown;
+    text-decoration: none;
+}
+.separacionReserva{
+    border-top: solid 20px rgb(180, 179, 179);
+}
+.precioReserva{
+    height: 10vh;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+.botonReserva{
+    color: white !important;
+    background-color: cornflowerblue !important;
+    width: 40%;
+    position: relative;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+}
+.botonReserva:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: green;
+    z-index: -1;
+    transition: 150ms ease-in-out;
+  }
+.botonReserva:hover {
+    color: #fff;
+    border-color: green;
+}
+.botonReserva:hover:after {
+    width: 100%;
+}
+
+.right2 {
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+    position: relative;
+    width: 50%;
+    height: 50px;
+    border: solid 2px grey;
+    background-color: white;
+}
+  
+.right2.active:after {
+    content: '';
+    position: absolute;
+    left: 99.8%;
+    border: transparent solid 25px;
+    border-left-color: white;
+}
+.left2{
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    height: 50px;
+}
+
+
+/*Elige habitacion*/
+.letraReserva{
+    font-family: 'Unna', serif;
+    font-size: 1.1rem;
+}
+.reservaTitulo{
+    font-family: 'Faustina', serif;
+    font-weight: bold;
+}
+.right {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    width: 50%;
+    height: 50px;
+    background-color: grey;
+}
+  
+.right.active:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    border: transparent solid 25px;
+    border-left-color: grey;
+}
+.left{
+    background-color: white;
+    border: solid 2px grey;
+    color: grey;
+    font-weight: bold;
+    width: 50%;
+    height: 50px;
+}
+.colorEligeHabitacion{
+    background-color: rgb(180, 179, 179);
+}
+.colorSelect{
+    background-color: rgb(189, 189, 189) !important;
+}
+.colorAcordion{
+    background-color: rgb(233, 233, 233);
+}
+.botonModificar{
+    background-color: white !important;
+    border: solid 2px aqua !important;
+    color: rgb(44, 44, 231) !important;
+}
+.colorOcupacion, .colorTotal{
+    background-color: darkgrey;
+}
+.icono2{
+    font-size: 1.5rem;
+}
+.icono22{
+    font-size: 1.7rem;
+}
+.bordeHabitacion{
+    border-bottom: solid 1px black;
+}
+.botonAñadir{
+    background-color: rgb(4, 105, 105) !important;
+    color: white !important;
+}
+.centrarTabla{
+    vertical-align: middle;
+}
+.colorCavas{
+    background-color: cornflowerblue;
+    color: white;
+}
+.bordeCanvas{
+    border-bottom: solid 2px black;
+}
+.leermas{
+    color: darkblue;
+    border: none;
+    background-color: white;
+}
+.leermas:hover{
+    color: red;
+}
+
+/*Administracion*/
+.letraAdministaracion{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.backgroundTabPane:hover{
+    background-color: #212529 !important;
+}
+.textoPlanta{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.divBoton{
+    min-width: max-content;
+}
+.sectionAdministrador{
+    background-color: rgb(236, 203, 120);
+}
+.containesAdministrador{
+    background-color: white
+}
+#Tamaño{
+    width: 250px;
+}
+.tamañoCajaImagen{
+    height: 250px;
+    position: relative;
+}
+.imagenReserva{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+}
+.Reservado{
+    background-color: red;
+    width: 100%;
+    color: white;
+    text-align: center;
+    transform: rotate(-40deg);
+    position: absolute;
+    top: 35%;
+    left: 0%;
+}
+.Libre{
+    background-color: green;
+    width: 100%;
+    color: white;
+    text-align: center;
+    transform: rotate(-40deg);
+    position: absolute;
+    top: 35%;
+    left: 0%;
+}
+.puerta{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+}
+
+@media screen and (max-width: 1350px) {
+    .habitacionesCarousel{
+        height: 50vh;
+        width: 49%;
+    }
+    .sectionCarouselHabitaciones{
+        height: 105vh;
+    }
+}
+@media screen and (max-width: 991px) {
+    .display2{
+        display: inline;
+    }
+    .display1{
+        display: none;
+    }
+    .bordehover, .bordefijo{
+        min-width: max-content;
+        margin-left: 0%;
+    }
+    .nav-item{
+        padding-bottom: 1%;
+    }
+    .habitacionesCarousel{
+        height: 40vh;
+    }
+    .sectionCarouselHabitaciones{
+        height: 85vh;
+    }
+}
+@media screen and (max-width: 850px) {
+    .sectionImagen{
+        height: 75vh;
+    }
+    .heightCarousel{
+        height: 75vh;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sectionImagen{
+        height: 60vh;
+    }
+    .heightCarousel{
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .sectionImagen{
+        height: 50vh;
+    }
+    .heightCarousel{
+        height: 50vh;
+    }
+    .habitacionesCarousel{
+        height: 50vh;
+        width: 100%;
+    }
+    .sectionCarouselHabitaciones{
+        height: 205vh;
+        min-height: 205vh;
+    }
+}

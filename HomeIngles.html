@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Roboto+Mono&family=Rubik:wght@300&family=The+Nautigal:wght@700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <title>Hotel</title>
+</head>
+<body>   
+    <!-- Cabecera con iniciar sesion y registro y cambio de idioma en las imagenes y nav para resolución mas pequeña con boton hamburguesa-->
+    <header>
+        <div class="colorRojo lineaSepara">
+            <div class="container p-1 d-md-flex justify-content-md-between">
+                <div class="d-flex align-items-center justify-content-center ps-md-5">
+                    <p class="m-0 cabeceraLetra">Hotel Viriato official website</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center pe-md-5"> 
+                    <a class="btn text-white m-0 p-0 pe-2 cabeceraLetra" data-bs-toggle="modal" data-bs-target="#sesionModal"> login</a>
+                    <a class="btn text-white m-0 p-0 pe-2 cabeceraLetra" data-bs-toggle="modal" data-bs-target="#registrarModal"> check in</a>
+                    <a href="Home.html"><img class="escudos me-2" src="img/es.PNG" alt="España"></a> 
+                    <a href="HomeIngles.html"><img class="escudos" src="img/en.PNG" alt="Inglaterra"></a>         
+                </div>              
+            </div>
+        </div>
+        <div class="display2">
+            <nav class="navbar navbar-expand-lg navbar-light colorRojo lineaSepara">
+                <div class="container">
+                    <a class="navbar-brand col-2" href="Home.html"><img class="logo" src="img/logo.JPG" alt="LogoHotel"></a> 
+                    <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 col-12">
+                            <li class="nav-item col-lg-2 col-12"><i class="bi bi-house-door-fill icono display1"></i>
+                                <a class="nav-link active p-0 text-white bordefijo" aria-current="page" href="Home.html"><i class="bi bi-house-door-fill icono display2 ms-0"></i> Home</a>
+                            </li>
+                            <li class="nav-item col-lg-2 col-12"><img class="icono display1" src="img/cama.png">
+                                <a class="nav-link d-flex d-inline align-items-center active p-0 text-white bordehover" href="#"><img class="icono display2 me-1" src="img/cama.png"> Rooms</a>
+                            </li>
+                            <li class="nav-item col-lg-2 col-12"><i class="bi bi-bell-fill icono display1"></i>
+                                <a class="nav-link active p-0 text-white bordehover" href="#"><i class="bi bi-bell-fill icono display2"></i> services</a>
+                            </li>
+                            <li class="nav-item col-lg-2 col-12"><img class="icono display1" src="img/euro.png">
+                                <a class="nav-link active p-0 d-flex d-inline align-items-center text-white bordehover" href="#"><img class="icono display2 me-1" src="img/euro.png">offers</a>
+                            </li>
+                            <li class="nav-item col-lg-2 col-12"><i class="bi bi-telephone-fill icono display1"></i>
+                                <a class="nav-link active p-0 text-white bordehover" href="#"><i class="bi bi-telephone-fill icono display2"></i> Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Section que contiene nav, un carousel con imagenes y un div para buscar habitaciones incluyendo la fecha de entrada y salida -->
+    <section class="sectionImagen">
+        <!--NAV-->
+        <div class="display1">
+            <nav class="navbar navbar-expand-lg navbar-light nav1">
+                <div class="container">
+                    <a class="navbar-brand col-2" href="Home.html"><img class="logo" src="img/logo.JPG" alt="LogoHotel"></a> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 col-12 d-flex justify-content-around">
+                            <li class="nav-item col-2"><i class="bi bi-house-door-fill icono"></i>
+                                <a class="nav-link active p-0 text-white mx-auto bordefijo" aria-current="page" href="Home.html">Home</a>
+                            </li>
+                            <li class="nav-item col-2"><img class="icono" src="img/cama.png">
+                                <a class="nav-link active p-0 text-white mx-auto bordehover" href="#">Rooms</a>
+                            </li>
+                            <li class="nav-item col-2"><i class="bi bi-bell-fill icono"></i>
+                                <a class="nav-link active p-0 text-white mx-auto bordehover" href="#">services</a>
+                            </li>
+                            <li class="nav-item col-2"><img class="icono" src="img/euro.png">
+                                <a class="nav-link active p-0 text-white mx-auto bordehover" href="#">offers</a>
+                            </li>
+                            <li class="nav-item col-2"><i class="bi bi-telephone-fill icono"></i>
+                                <a class="nav-link active p-0 text-white mx-auto bordehover" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Carousel-->
+        <div id="boton" class="carousel slide carousel1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <div class="fondoOscuro"></div>
+                    <img src="img/Sevilla.jpg" class="d-block w-100 heightCarousel" alt="foto2">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="fondoOscuro"></div>
+                    <img src="img/habitacion.jpg" class="d-block w-100 heightCarousel" alt="foto2">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="fondoOscuro"></div>
+                    <img src="img/recepcion.jpg" class="d-block w-100 heightCarousel" alt="foto3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#boton" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon botonesCarousel" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#boton" data-bs-slide="next">
+                <span class="carousel-control-next-icon botonesCarousel" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Div para buscar habiataciones-->
+        <div class="container d-flex justify-content-center disponibilidadAbsolute">
+            <form class="d-flex align-items-center justify-content-center formularioDisponibilidad">
+                <div class="row form-group col-lg-12 col-12 d-flex justify-content-center">
+                    <div class="col-lg-4 col-6">
+                        <label for="date" class="col-form-label text-white">Entry</label>
+                        <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-white d-block">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>           
+                    <div class="col-lg-4 col-6">
+                        <label for="date" class="col-form-label text-white">Exit</label>
+                        <div class="input-group date mb-3" id="datepicker2">
+                            <input type="text" class="form-control">
+                            <span class="input-group-append">
+                                <span class="input-group-text bg-white d-block">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-end">
+                        <input type="submit" class="form-control mb-3 buscar1" value="Search">
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </section>
+    
+    <!-- Section que contiene información del hotel-->
+    <section class="color">
+        <div class="container">
+            <h1 class="text-center pt-4 letratitulo">Welcome to Hotel Viriato Seville</h1>
+            <p class="text-center letratexto">The Hotel Viriato is located in the heart of Seville, we are in Viriato street, its privileged location is ideal for visiting
+                the main monuments of Seville such as La Giralda, Cathedral, Torre del Oro, Archivo de Indias, Reales Alcázares de Sevilla and
+                entertainment sites in the city, you will have them a few meters away, being able to rest whenever you feel like it in your comfortable room
+                because of the proximity we have to all the places of interest. From the Hotel Viriato it will take 10 minutes to reach the Giralda on foot.
+            </p>
+            <p class="text-center mb-0 pb-3 letratexto">If you are looking for a hotel to stay in the Andalusian capital with charm, maximum comfort and good services, it is the perfect place for it.
+                And remember that by booking here on our Official Website, you will find the best price guaranteed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section que contiene un carousel con fotos de los tipos de habiataciones-->
+    <section class="sectionColor pt-2">
+        <h2 class="text-center letratitulo">Our gallery</h2>
+        <div id="boton1" class="carousel slide sectionCarouselHabitaciones" data-bs-ride="carousel">
+            <div class="carousel-inner centrarCarousel">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/habitaciones/1.jpg" class="habitacionesCarousel" alt="habitacion1">
+                    <img src="img/habitaciones/2.jpg" class="habitacionesCarousel" alt="habitacion2">
+                    <img src="img/habitaciones/3.jpg" class="habitacionesCarousel" alt="habitacion3">
+                    <img src="img/habitaciones/4.jpg" class="habitacionesCarousel" alt="habitacion4">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/habitaciones/5.jpg" class="habitacionesCarousel" alt="habitacion5">
+                    <img src="img/habitaciones/6.jpg" class="habitacionesCarousel" alt="habitacion6">
+                    <img src="img/habitaciones/7.jpg" class="habitacionesCarousel" alt="habitacion7">
+                    <img src="img/habitaciones/8.jpg" class="habitacionesCarousel" alt="habitacion8">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/habitaciones/9.jpg" class="habitacionesCarousel" alt="habitacion9">
+                    <img src="img/habitaciones/10.jpg" class="habitacionesCarousel block" alt="habitacion10">
+                    <img src="img/habitaciones/11.jpg" class="habitacionesCarousel" alt="habitacion11">
+                    <img src="img/habitaciones/12.jpg" class="habitacionesCarousel" alt="habitacion12">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#boton1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon botonesCarousel" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#boton1" data-bs-slide="next">
+                <span class="carousel-control-next-icon botonesCarousel" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer de la página -->
+    <footer class="text-center footer pt-1">
+        <div class="container text-center text-md-start mt-5 ">
+            <div class="row mt-3">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 pt-0 mx-auto mb-4">                 
+                    <h6 class="text-uppercase fw-bold mb-4 colorLetraFooter letratitulo2">Policies</h6>
+                    <p><a href="#" class="text-white">Cookies policy</a></p>
+                    <p><a href="#" class="text-white">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white">Legal warning</a></p>
+                    <p><a href="#" class="text-white">Booking conditions</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4 colorLetraFooter letratitulo2">Our company</h6>
+                    <p><a href="#" class="text-white">About us?</a></p>
+                    <p><a href="#" class="text-white">Work with us</a></p>
+                    <p><a href="#" class="text-white">Security</a></p>
+                    <p><a href="#" class="text-white">Blog</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ps-4">
+                    <h6 class="text-uppercase fw-bold mb-4 colorLetraFooter letratitulo2">Contact</h6>
+                    <p class="mb-1 text-white"><i class="bi bi-telephone-fill me-3"></i>+34 687 272 793</p>
+                    <!-- Link de redes sociales y correo -->
+                    <a href="mailto:scs@gmail.com" class="text-white"><i class="fas fa-envelope me-3"></i>Send us an email</a>
+                    <p class="mb-0 mt-4 fs-5 colorLetraFooter letratitulo2">Follow us on:</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="d-inline-flex">
+                            <a href="https://www.instagram.com/" target="_blank" class="text-white fs-2 my-3 me-3 instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://es-es.facebook.com/" target="_blank" class="text-white fs-2 m-3 tiktok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class=" text-white fs-2 m-3 twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fondo-copyright" class="text-center text-info pb-4 col-12">
+            <p class="d-inline">© 2022 Copyright</p>
+            <a class="text-info fw-bold" target="_blank" href="https://www.linkedin.com/">Fernando</a>
+        </div>
+    </footer>
+    
+    <!-- Ventana modal que salta cuando haces clic en iniciar sesión-->
+    <div class="modal fade" id="sesionModal"> 
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header flex-column"> 
+                    <a href="SesionUsuario.html" class="btn btn-primary btn-block col-12" role="button">
+                        <i class="fab fa-facebook-f"> Sign in with Facebook</i> 
+                    </a>
+                    <a href="SesionUsuario.html" class="btn btn-danger btn-block col-12 mt-2" role="button">
+                        <i class="bi bi-google"> Sign in with Google</i> 
+                    </a>
+                    <a href="SesionUsuario.html" class="btn btn-dark btn-block col-12 mt-2" role="button">
+                        <i class="bi bi-apple"> Sign in with Apple</i> 
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <p>O well</p>
+                    <form action="SeccionClases.html">
+                        <div class="form-group pb-2">
+                            <label for="inputEmail"><strong>Email</strong></label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Write your email..."> 
+                        </div> 
+                        <div class="form-group pb-3">
+                            <label for="inputPassword"><strong>Password</strong></label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password..."> 
+                        </div> 
+                        <a type="submit" href="SesionUsuario.html" class="btn btn-success btn-block col-12">Log in</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p><a href="">Have you forgotten the password?</a></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana modal que salta cuando haces clic en registrarse-->
+    <div class="modal fade" id="registrarModal"> 
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header flex-column"> 
+                    <a href="SesionUsuario.html" class="btn btn-primary btn-block col-12" role="button">
+                        <i class="fab fa-facebook-f"> Sign up with Facebook</i> 
+                    </a>
+                    <a href="SesionUsuario.html" class="btn btn-danger btn-block col-12 mt-2" role="button">
+                        <i class="bi bi-google"> Sign up with Google</i> 
+                    </a>
+                    <a href="SesionUsuario.html" class="btn btn-dark btn-block col-12 mt-2" role="button">
+                        <i class="bi bi-apple"> Sign up with Apple</i> 
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <p>O well</p>
+                    <form>
+                        <div class="form-group pb-3">
+                            <label for="inputUsuario">Name</label>
+                            <input type="text" class="form-control mt-2" id="inputUsuario" placeholder="Enter a username..."> 
+                        </div> 
+                        <div class="form-group pb-3">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control mt-2" id="inputEmail" placeholder="Write your email..."> 
+                        </div> 
+                        <div class="form-group pb-3">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control mt-2" id="inputPassword" placeholder="Choose a password..."> 
+                        </div>
+                        <div class="form-group pb-3">
+                            <label for="inputConfirmarPassword">Confirm your password</label>
+                            <input type="password" class="form-control mt-2" id="inputConfirmarPassword" placeholder="Retype your password..."> 
+                        </div> 
+                        <a type="submit" href="SesionUsuario.html" class="btn btn-success btn-block col-12">Sign up</a>
+                    </form>
+                </div>
+                <div class="modal-footer mb-2">
+                    <p>When registering, <a href="" class="enlace2">I accept the terms of use</a> and <a href="" class="enlace2">Privacy Policy</a></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+</body>
+</html>
